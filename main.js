@@ -46,6 +46,45 @@ console.log(`Il peso minore è: ${pesoMinore}${unit}`);
 // Generare numeri random al posto degli 0 nelle proprietà "punti" fatti e "falli subiti".
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+let squadre = [
+  (squadra1 = {
+    nome: "Inter",
+    punti: 0,
+    falliSubiti: 0,
+  }),
+  (squadra2 = {
+    nome: "Juventus",
+    punti: 0,
+    falliSubiti: 0,
+  }),
+  (squadra3 = {
+    nome: "Milan",
+    punti: 0,
+    falliSubiti: 0,
+  }),
+];
+
+squadra1.punti = Math.floor(Math.random() * 50) + 1;
+squadra2.punti = Math.floor(Math.random() * 50) + 1;
+squadra3.punti = Math.floor(Math.random() * 50) + 1;
+
+squadra1.falliSubiti = Math.floor(Math.random() * 10) + 1;
+squadra2.falliSubiti = Math.floor(Math.random() * 10) + 1;
+squadra3.falliSubiti = Math.floor(Math.random() * 10) + 1;
+
+console.log(squadre);
+
+newArray = [];
+
+newArray.push(squadra1.nome);
+newArray.push(squadra1.falliSubiti);
+newArray.push(squadra2.nome);
+newArray.push(squadra2.falliSubiti);
+newArray.push(squadra3.nome);
+newArray.push(squadra3.falliSubiti);
+
+console.log(newArray);
+
 // Snack 3 (Bonus)
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
