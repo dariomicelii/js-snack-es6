@@ -88,3 +88,20 @@ console.log(newArray);
 // Snack 3 (Bonus)
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+
+numeri = [1, 2, 3, 4, 5];
+
+num1 = prompt("inserisci il numero più piccolo:");
+num2 = prompt("inserisci il numero più grande:");
+
+arrayBetween = [];
+
+function numBetween([], num1, num2) {
+  for (let numero in numeri)
+    if (numero > num1 && numero < num2) {
+      arrayBetween.push(numero);
+    }
+  return console.log(arrayBetween);
+}
+
+numBetween(numeri, num1, num2);
